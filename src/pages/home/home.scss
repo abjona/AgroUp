@@ -1,3 +1,51 @@
 page-home {
+    .header{
+        height: 275px;
+        width: 100%;
+        background-color: rgba(185, 92, 97, 1);
+    }
 
+
+    .logout{
+        right: 0;
+        top: 1px;
+        float: right;
+    }
+
+    .subh{
+       width: 100%;
+    }
+
+    .searchbar-md .searchbar-input{
+        border-radius: 20px;
+    }
+
+    .search{
+        margin-top: 40px;
+    }
+
+    .info{
+        margin-top:20px;
+    }
+
+    .menu-row{
+        border-bottom: 1px solid rgb(180, 180, 180);
+    }
+
+    .icon1{
+        border-right: 1px solid rgb(180, 180, 180);
+    }
+
+    h6{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .grid{
+        padding: 0px;
+    }
+
+    .icon2{
+        border-right: 1px solid rgb(180, 180, 180);
+    }
 }

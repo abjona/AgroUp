@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar color="tema">
+      <ion-title>Mineral</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-row>
+      <ion-col>
+        <ion-select [(ngModel)]="selectValue">
+          <ion-option value="mais">
+            Mais Buscados
+          </ion-option>
+          <ion-option value="barato">
+            Mais Barato
+          </ion-option>
+          <ion-option value="caro">
+            Mais Caro
+          </ion-option>
+        </ion-select>
+      </ion-col>
+      <ion-col>
+        <button class="btn1" small ion-button color="tema" outline icon-start round>
+          <ion-icon name="options"></ion-icon>Filtrar
+        </button>
+      </ion-col>
+    </ion-row>
+  
+  </ion-content>

@@ -1,14 +1,43 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <div class="header">
+   <div class="subh">
+      <button class="menu" clear ion-button menuToggle color="light">
+          <ion-icon style="font-size: 30px;" name="menu"></ion-icon>
+        </button>
+    
+            <button class="logout" ion-button clear color="light" icon-only (click)="logout()">
+              <ion-icon style="font-size: 30px;" name="md-log-out"></ion-icon>
+            </button>
+   </div>
+      
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <div class="info" padding-left>
+      <h2 style="color:white;font-weight: 100;">Bem Vindo!</h2>
+      <h2 style="color: white"><b> {{ user.nome }}</b></h2>
+    </div>
+
+    <div class="search">
+      <ion-searchbar placeholder = "Digite aqui" (ionInput)="getItems($event)"></ion-searchbar>
+    </div>
+  </div>
+
+  <div class="menu">
+    <ion-grid>
+      <ion-row class="menu-row" text-center>
+        <ion-col (click)="goToVolumoso()" class="icon1">
+          <ion-icon style="font-size: 40px" name="custom-folha"></ion-icon>
+          <h6>Volumoso</h6>
+        </ion-col>
+        <ion-col (click)="goToConcentrado()" class="icon2">
+          <ion-icon style="font-size: 40px" name="custom-corn"></ion-icon>
+          <h6>Concentrado</h6>
+        </ion-col>
+        <ion-col>
+          <ion-icon (click)="goToMineral()" style="font-size: 40px" name="custom-mineral"></ion-icon>
+          <h6>Mineral</h6>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </div>
 </ion-content>

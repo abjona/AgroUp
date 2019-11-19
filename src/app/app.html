@@ -1,1 +1,33 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-navbar color="tema">
+            <ion-title>Menu</ion-title>
+        </ion-navbar>
+    </ion-header>
+
+    <ion-content>
+            <ion-list>
+                <button menuClose ion-item icon-only (click)="home();">
+                    <ion-label>Perfil</ion-label>
+                    <ion-icon name="contact" color="btn-login" item-end></ion-icon>
+                </button>
+    
+                <button menuClose ion-item icon-only (click)="perfil();">
+                    <ion-label>Vender</ion-label>
+                    <ion-icon name="cash" color="btn-login" item-end></ion-icon>
+                </button>
+                
+                <button menuClose ion-item icon-only (click)="pacientes();">
+                    <ion-label>Compras</ion-label>
+                    <ion-icon name="cart" color="btn-login" item-end></ion-icon>
+                </button>
+
+                <button menuClose ion-item icon-only (click)="pacientes();">
+                        <ion-label>Controle de Gado</ion-label>
+                        <ion-icon margin-right name="custom-cow" item-end></ion-icon>
+                    </button>
+                </ion-list>
+        </ion-content>
+    
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

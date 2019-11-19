@@ -1,0 +1,22 @@
+page-welcome {
+    .btn{
+        bottom: 0px;
+    }
+
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+        background: transparent;
+    }
+
+    .button-md{
+        height: 5.5rem;
+    }
+
+    .button-md-light {
+        color: #e13838;
+        background-color: #f4f4f4;
+    }
+
+    .scroll-content{
+        background-color: rgba(185, 92, 97, 1);
+    }
+}

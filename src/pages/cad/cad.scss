@@ -1,0 +1,26 @@
+page-cad {
+  .button-md {
+    height: 5.5rem;
+  }
+
+  .item-md.item-input.item-input-has-focus .item-inner,
+  .item-md.item-input.input-has-focus .item-inner {
+    border-bottom-color: #b95c61;
+    -webkit-box-shadow: inset 0 -1px 0 0 #b95c61;
+    box-shadow: inset 0 -1px 0 0 #b95c61;
+  }
+
+  .list-md .item-input.item-input-has-focus:last-child,
+  .list-md .item-input.input-has-focus:last-child {
+    border-bottom-color: #b95c61;
+    -webkit-box-shadow: inset 0 -1px 0 0 #b95c61;
+    box-shadow: inset 0 -1px 0 0 #b95c61;
+  }
+
+  .item-input-has-focus .label-md[stacked],
+  .input-has-focus .label-md[stacked],
+  .item-input-has-focus .label-md[floating],
+  .input-has-focus .label-md[floating] {
+    color: #b95c61;
+  }
+}
